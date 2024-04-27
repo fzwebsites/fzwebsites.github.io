@@ -226,7 +226,6 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
-    /* Puoi regolare l'opacità cambiando il valore dell'ultimo parametro tra 0 e 1 */
 }
 
 .title-med {
@@ -270,6 +269,10 @@ footer {
 
     .footer p {
         font-weight: bold;
+    }
+
+    .img-big {
+    width: 100%;
     }
 }
 
