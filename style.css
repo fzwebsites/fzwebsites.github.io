@@ -57,11 +57,43 @@ html {
     text-decoration: none;
 }
 
-.header__menu li a:hover {
+/*.header__menu li a:hover {
     color: var(--darkGold);
     text-decoration: underline;
     font-weight: bold;
+}*/
+
+/*ANIMAZIONE LI MENU*/
+
+.header__menu li a {
+  display: inline-block;
+  position: relative;
+  color: var(--gold);
 }
+
+.header__menu li a:hover {
+  cursor: pointer;
+}
+
+.header__menu li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease;
+}
+
+.header__menu li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*______________________*/
 
 .header__icons {
     width: 50px;
